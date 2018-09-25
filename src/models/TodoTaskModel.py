@@ -13,8 +13,14 @@ class Task:
     def be_completed(self):
         self.completed = True
 
-    def as_json(self):
-        return self.as_object
+    def is_completed(self):
+        return self.completed
+
+    def get_uuid(self):
+        return self.uuid
+
+    def get_content(self):
+        return self.content
 
     def as_dictionary(self):
         return {

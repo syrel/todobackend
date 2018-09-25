@@ -1,4 +1,5 @@
-from src.TodoTaskModel import Task
+from models import (TaskExamples)
 
-task = Task("task contains information about an assignment")
-print(task.as_dictionary())
+from gt_examples import (example, GtExampleFactory, GtExampleExamples, Assert)
+
+GtExampleFactory.examples_in_all((TaskExamples, GtExampleExamples)).run()

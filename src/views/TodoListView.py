@@ -3,7 +3,7 @@ from logging import getLogger
 
 from aiohttp.web import Response, View, json_response
 
-from .models import Task
+from src.models import Task
 
 logger = getLogger(__name__)
 
